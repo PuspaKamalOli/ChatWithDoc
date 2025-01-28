@@ -41,14 +41,14 @@ This Streamlit application allows us to upload PDF files and chat with them usin
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/PuspaKamalOli/ChatWithDoc
+   cd ChatWithDoc
    ```
 
 2. Create a virtual environment and activate it:
    ```bash
    python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+  #on mac: source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
 3. Install the dependencies:
