@@ -1,0 +1,36 @@
+# Python specific
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+*.egg-info/
+
+# Streamlit generated files
+.streamlit/
+
+# Docker specific
+*.log
+*.tmp
+*.pid
+*.sock
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# FAISS index
+faiss_index/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
