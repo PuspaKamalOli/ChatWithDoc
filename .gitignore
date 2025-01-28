@@ -1,36 +1,32 @@
-# Python specific
+# Virtual environment
+chat/
+
+# Python bytecode files
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
 
 # Environment variables
 .env
 
-# Byte-compiled / optimized / DLL files
-*.pyc
-*.pyo
-*.pyd
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
 
-# Virtual environments
-venv/
-*.egg-info/
-
-# Streamlit generated files
-.streamlit/
-
-# Docker specific
+# Log files
 *.log
-*.tmp
-*.pid
-*.sock
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# Distribution / packaging
+*.egg
+*.egg-info
+dist/
+build/
+pip-wheel-metadata/
 
-# FAISS index
+# FAISS index files
 faiss_index/
 
-# Jupyter notebooks
-.ipynb_checkpoints/
+# Streamlit-specific
+.cache/
