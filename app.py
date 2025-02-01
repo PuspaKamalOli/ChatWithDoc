@@ -147,7 +147,8 @@ def main():
                         st.error(f"Error during PDF processing: {str(e)}")
 
     # Chat interface
-    st.header("💬 Ask Questions from the PDFs")
+    st.header("
+    Ask Questions from the PDFs")
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
 
@@ -175,7 +176,7 @@ def main():
 
     # Conversational form for callback or appointments
     if "call me" in user_question.lower() or "appointment" in user_question.lower():
-        st.subheader("📋 Provide Your Details")
+        st.subheader(" Provide Your Details")
 
         name = st.text_input("Name", value=st.session_state.user_details["name"])
         email = st.text_input("Email", value=st.session_state.user_details["email"])
@@ -203,15 +204,15 @@ def main():
             st.session_state.form_submitted = True
 
     if st.session_state.form_submitted:
-        st.write("✅ Thank you! We'll be in touch soon.")
+        st.write(" Thank you! We'll be in touch soon.")
 
     # Display chat history
     st.subheader("Chat History")
     for role, text in st.session_state.chat_history:
         if role == "You":
-            st.markdown(f"**🧑‍💻 {role}:** {text}")
+            st.markdown(f"** {role}:** {text}")
         else:
-            st.markdown(f"**🤖 {role}:** {text}")
+            st.markdown(f"** {role}:** {text}")
 
     # Clear chat history
     if st.button("Clear Chat History"):
